@@ -1,0 +1,30 @@
+@import "../constants/vars";
+html {
+  font-size: 10px;
+  line-height: 10px;
+  color: $primary2;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $main_font;
+}
+h1,
+h2,
+h3,
+ul {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 10px;
+}

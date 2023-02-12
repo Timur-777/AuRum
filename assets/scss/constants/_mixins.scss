@@ -1,0 +1,29 @@
+// -Flexbox
+@mixin flex-between() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@mixin flex-around() {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+//Positions
+@mixin nav-hover-position() {
+  content: "";
+  position: absolute;
+  top: 37px;
+  left: 0;
+  height: 2px;
+  background-color: $primary3;
+}

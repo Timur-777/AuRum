@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>AuRum</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <!-- Mobile -->
+        <div class="mobile-wrapper">
+          <img src="assets/img/logo.png" alt="LOGO" />
+          <div id="mobile-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="mobile-menu">
+            <div id="mobile-menu-close">&#9587;</div>
+            <div class="mobile-menu__inner">
+              <ul class="header__menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ana səhifə</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about.html">Haqqımızda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/service.html"
+                    >Xidmətlər &#10095;</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/ship.html">Gəmilər</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/career.html">Karyera</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/gallery.html">Qalereya</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contacts.html">Əlaqə</a>
+                </li>
+              </ul>
+              <section class="header__nav">
+                <div class="header__social">
+                  <a href="#" class="header__social-link"
+                    ><svg
+                      width="8"
+                      height="16"
+                      viewBox="0 0 8 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.5 2.69995H8V0.199951C7.3 0.0999512 6.60002 0.100098 5.90002 0.100098C3.80002 0.100098 2.40002 1.3999 2.40002 3.8999V6.1001H0V8.8999H2.29999V16.1001H5.09998V8.8999H7.29999L7.70001 6.1001H5.09998V4.1001C5.19998 3.2001 5.4 2.69995 6.5 2.69995Z"
+                        fill="#CEBD88"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" class="header__social-link"
+                    ><svg
+                      width="17"
+                      height="17"
+                      viewBox="0 0 17 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.2 16.2V10.2C16.2 7.3 15.6 5 12.2 5C10.9 5 9.69995 5.6 8.99995 6.8V5.4H5.69995V16.2H9.09995V10.8C9.09995 9.4 9.39995 8 11.1 8C12.8 8 12.9 9.6 12.9 10.9V16.2H16.2Z"
+                        fill="#CEBD88"
+                      />
+                      <path
+                        d="M0.300049 5.4H3.70005V16.2H0.300049V5.4Z"
+                        fill="#CEBD88"
+                      />
+                      <path
+                        d="M1.9 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4C3.1 4 4 3.1 4 2C3.9 0.9 3 0 1.9 0Z"
+                        fill="#CEBD88"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" class="header__social-link"
+                    ><svg
+                      width="20"
+                      height="16"
+                      viewBox="0 0 20 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18.9 1.8999C18.5 2.0999 17.9999 2.20005 17.5999 2.30005C18.0999 1.80005 18.5 1.2001 18.7 0.600098C18.7 0.500098 18.6999 0.400049 18.5999 0.300049C18.4999 0.300049 18.5 0.300049 18.4 0.300049C17.8 0.700049 17.1 1.0001 16.4 1.1001H16.2999C16.1999 1.1001 16 1.1 15.9 1C15.1 0.3 14.2 0 13.2 0C12.8 0 12.3 0.0999512 11.9 0.199951C10.6 0.599951 9.49995 1.7001 9.19995 3.1001C9.09995 3.6001 8.99991 4.1001 9.09991 4.6001V4.69995L8.99994 4.80005C6.09994 4.50005 3.39994 3.10005 1.49994 0.800049C1.39994 0.700049 1.29995 0.700049 1.19995 0.800049C1.19995 0.800049 1.19995 0.799902 1.19995 0.899902C0.199951 2.4999 0.499963 4.5999 1.89996 5.8999C1.59996 5.7999 1.29994 5.7 0.999939 5.5C0.899939 5.4 0.799951 5.5001 0.699951 5.6001V5.69995C0.699951 7.29995 1.59991 8.8 3.09991 9.5H2.99994C2.79994 9.5 2.49993 9.4999 2.29993 9.3999C2.19993 9.3999 2.09994 9.5001 1.99994 9.6001V9.69995C2.49994 11.2 3.69993 12.3 5.29993 12.5C3.99993 13.4 2.49994 13.8 0.999939 13.8H0.499939C0.399939 13.8 0.199951 13.9 0.199951 14C0.199951 14.1 0.199963 14.2999 0.399963 14.3999C2.09996 15.3999 4.09991 15.8999 6.09991 15.8999C7.79991 15.8999 9.49994 15.5999 10.9999 14.8999C12.3999 14.2999 13.5999 13.4 14.5999 12.2C15.4999 11.1 16.2999 9.9 16.7999 8.5C17.2999 7.2 17.4999 5.9 17.4999 4.5V4.3999C17.4999 4.1999 17.5999 3.9999 17.7999 3.8999C18.3999 3.3999 19 2.8001 19.4 2.1001C19.5 2.0001 19.3999 1.90005 19.2999 1.80005C19.0999 1.80005 19 1.7999 18.9 1.8999Z"
+                        fill="#CEBD88"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" class="header__social-link"
+                    ><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.20006 16H8.00004C6.70004 16 5.60004 15.9999 4.50004 15.8999C3.50004 15.8999 2.50003 15.4999 1.80003 14.8999C1.10003 14.2999 0.500032 13.5 0.300032 12.5C0.100032 11.7 1.93417e-05 10.8 0.100019 10C0.100019 9.4 0.100019 8.7 0.100019 8C0.100019 7.3 0.100019 6.6 0.100019 6C0.100019 5.2 0.200032 4.3 0.300032 3.5C0.500032 2.6 1.00003 1.7001 1.80003 1.1001C2.60003 0.500098 3.50004 0.100098 4.50004 0.100098C5.60004 9.76548e-05 6.80004 0 8.00004 0C9.30004 0 10.4 9.76548e-05 11.5 0.100098C12.5 0.100098 13.5001 0.500098 14.2001 1.1001C14.9001 1.7001 15.5001 2.5 15.7001 3.5C15.9001 4.3 16.0001 5.2 15.9001 6C15.9001 6.6 15.9001 7.3 15.9001 8C15.9001 8.7 15.9001 9.4 15.9001 10C15.9001 10.8 15.8001 11.7 15.7001 12.5C15.5001 13.4 15.0001 14.2999 14.2001 14.8999C13.4001 15.4999 12.5 15.8999 11.5 15.8999C10.5 15.9999 9.40006 16 8.20006 16ZM8.00004 14.8C9.20004 14.8 10.4 14.8 11.5 14.7C12.2 14.7 12.9 14.3999 13.5 13.8999C14 13.4999 14.4 12.9 14.5 12.2C14.7 11.5 14.7001 10.7 14.7001 10C14.7001 9.4 14.7001 8.7 14.7001 8C14.7001 7.3 14.7001 6.6 14.7001 6C14.7001 5.3 14.7 4.50005 14.5 3.80005C14.3 3.10005 14.0001 2.5001 13.4001 2.1001C12.8001 1.6001 12.1001 1.40005 11.4001 1.30005C10.3001 1.20005 9.20007 1.19995 7.90007 1.19995C6.70007 1.19995 5.50007 1.20005 4.40007 1.30005C3.70007 1.30005 3.00007 1.6001 2.40007 2.1001C1.90007 2.5001 1.50007 3.10005 1.40007 3.80005C1.20007 4.50005 1.20006 5.3 1.20006 6C1.20006 6.6 1.20006 7.3 1.20006 8C1.20006 8.7 1.20006 9.4 1.20006 10C1.20006 10.7 1.20007 11.5 1.40007 12.2C1.60007 12.9 1.90004 13.4999 2.50004 13.8999C3.10004 14.3999 3.80004 14.6 4.50004 14.7C5.60004 14.7 6.80004 14.8 8.00004 14.8ZM8.00004 11.8999C5.80004 11.8999 4.10002 10.2 4.10002 8C4.10002 5.8 5.80004 4.1001 8.00004 4.1001C10.2 4.1001 11.9001 5.8 11.9001 8C11.9001 10.2 10.1 11.8999 8.00004 11.8999ZM8.00004 5.30005C6.50004 5.30005 5.30003 6.5 5.30003 8C5.30003 9.5 6.50004 10.7 8.00004 10.7C9.50004 10.7 10.7001 9.5 10.7001 8C10.6001 6.5 9.40004 5.30005 8.00004 5.30005ZM12.3 2.80005C11.8 2.80005 11.4001 3.19995 11.4001 3.69995C11.4001 4.19995 11.8 4.6001 12.3 4.6001C12.8 4.6001 13.2001 4.19995 13.2001 3.69995C13.3001 3.29995 12.8 2.80005 12.3 2.80005Z"
+                        fill="#CEBD88"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" class="header__social-link"
+                    ><svg
+                      width="21"
+                      height="17"
+                      viewBox="0 0 21 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.70007 4.50005C8.40007 4.30005 8.00007 4.40005 7.80007 4.70005C7.70007 4.80005 7.70007 4.90005 7.70007 5.00005V11.1C7.70007 11.5 8.00007 11.8 8.40007 11.8C8.50007 11.8 8.60007 11.8 8.70007 11.7L13.8001 8.60005C14.1001 8.40005 14.2001 8.00005 14.0001 7.70005C13.9001 7.60005 13.9001 7.50005 13.8001 7.50005L8.70007 4.50005ZM9.00007 10V6.20005L12.2001 8.10005L9.00007 10Z"
+                        fill="#CEBD88"
+                      />
+                      <path
+                        d="M17.4 0.500049C12.8 -0.0999512 8.20002 -0.0999512 3.60002 0.500049C1.90002 0.700049 0.600024 2.00005 0.400024 3.60005C-0.0999756 6.60005 -0.0999756 9.60005 0.400024 12.5C0.700024 14.1 2.00002 15.4 3.60002 15.7C5.90002 16 8.20002 16.2001 10.5 16.2001C12.8 16.2001 15.1 16.1 17.4 15.7C19 15.4 20.3 14.2 20.6 12.5C21.1 9.50005 21.1 6.50005 20.6 3.60005C20.4 2.00005 19.1 0.700049 17.4 0.500049ZM19.3 12.3C19.1 13.4 18.3 14.2 17.2 14.4C12.7 15 8.20002 15 3.70002 14.4C2.60002 14.2 1.80002 13.4 1.60002 12.3C1.10002 9.50005 1.10002 6.60005 1.60002 3.80005C1.80002 2.70005 2.60002 1.90005 3.70002 1.70005C6.00002 1.50005 8.30002 1.30005 10.5 1.30005C12.8 1.30005 15 1.40005 17.2 1.70005C18.3 1.90005 19.1 2.70005 19.3 3.80005C19.8 6.70005 19.8 9.50005 19.3 12.3Z"
+                        fill="#CEBD88"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="header__lang">
+                  <a href="#" class="header__lang-link">Az</a>
+                  <a href="#" class="header__lang-link">Ru</a>
+                  <a href="#" class="header__lang-link">En</a>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <!-- Desctop -->
+        <div class="desctop-menu">
+          <div class="header__navigation">
+            <ul class="header__social">
+              <li>
+                <a href="#"
+                  ><svg
+                    width="8"
+                    height="16"
+                    viewBox="0 0 8 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.5 2.69995H8V0.199951C7.3 0.0999512 6.60002 0.100098 5.90002 0.100098C3.80002 0.100098 2.40002 1.3999 2.40002 3.8999V6.1001H0V8.8999H2.29999V16.1001H5.09998V8.8999H7.29999L7.70001 6.1001H5.09998V4.1001C5.19998 3.2001 5.4 2.69995 6.5 2.69995Z"
+                      fill="#CEBD88"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 17 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.2 16.2V10.2C16.2 7.3 15.6 5 12.2 5C10.9 5 9.69995 5.6 8.99995 6.8V5.4H5.69995V16.2H9.09995V10.8C9.09995 9.4 9.39995 8 11.1 8C12.8 8 12.9 9.6 12.9 10.9V16.2H16.2Z"
+                      fill="#CEBD88"
+                    />
+                    <path
+                      d="M0.300049 5.4H3.70005V16.2H0.300049V5.4Z"
+                      fill="#CEBD88"
+                    />
+                    <path
+                      d="M1.9 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4C3.1 4 4 3.1 4 2C3.9 0.9 3 0 1.9 0Z"
+                      fill="#CEBD88"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    width="20"
+                    height="16"
+                    viewBox="0 0 20 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.9 1.8999C18.5 2.0999 17.9999 2.20005 17.5999 2.30005C18.0999 1.80005 18.5 1.2001 18.7 0.600098C18.7 0.500098 18.6999 0.400049 18.5999 0.300049C18.4999 0.300049 18.5 0.300049 18.4 0.300049C17.8 0.700049 17.1 1.0001 16.4 1.1001H16.2999C16.1999 1.1001 16 1.1 15.9 1C15.1 0.3 14.2 0 13.2 0C12.8 0 12.3 0.0999512 11.9 0.199951C10.6 0.599951 9.49995 1.7001 9.19995 3.1001C9.09995 3.6001 8.99991 4.1001 9.09991 4.6001V4.69995L8.99994 4.80005C6.09994 4.50005 3.39994 3.10005 1.49994 0.800049C1.39994 0.700049 1.29995 0.700049 1.19995 0.800049C1.19995 0.800049 1.19995 0.799902 1.19995 0.899902C0.199951 2.4999 0.499963 4.5999 1.89996 5.8999C1.59996 5.7999 1.29994 5.7 0.999939 5.5C0.899939 5.4 0.799951 5.5001 0.699951 5.6001V5.69995C0.699951 7.29995 1.59991 8.8 3.09991 9.5H2.99994C2.79994 9.5 2.49993 9.4999 2.29993 9.3999C2.19993 9.3999 2.09994 9.5001 1.99994 9.6001V9.69995C2.49994 11.2 3.69993 12.3 5.29993 12.5C3.99993 13.4 2.49994 13.8 0.999939 13.8H0.499939C0.399939 13.8 0.199951 13.9 0.199951 14C0.199951 14.1 0.199963 14.2999 0.399963 14.3999C2.09996 15.3999 4.09991 15.8999 6.09991 15.8999C7.79991 15.8999 9.49994 15.5999 10.9999 14.8999C12.3999 14.2999 13.5999 13.4 14.5999 12.2C15.4999 11.1 16.2999 9.9 16.7999 8.5C17.2999 7.2 17.4999 5.9 17.4999 4.5V4.3999C17.4999 4.1999 17.5999 3.9999 17.7999 3.8999C18.3999 3.3999 19 2.8001 19.4 2.1001C19.5 2.0001 19.3999 1.90005 19.2999 1.80005C19.0999 1.80005 19 1.7999 18.9 1.8999Z"
+                      fill="#CEBD88"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.20006 16H8.00004C6.70004 16 5.60004 15.9999 4.50004 15.8999C3.50004 15.8999 2.50003 15.4999 1.80003 14.8999C1.10003 14.2999 0.500032 13.5 0.300032 12.5C0.100032 11.7 1.93417e-05 10.8 0.100019 10C0.100019 9.4 0.100019 8.7 0.100019 8C0.100019 7.3 0.100019 6.6 0.100019 6C0.100019 5.2 0.200032 4.3 0.300032 3.5C0.500032 2.6 1.00003 1.7001 1.80003 1.1001C2.60003 0.500098 3.50004 0.100098 4.50004 0.100098C5.60004 9.76548e-05 6.80004 0 8.00004 0C9.30004 0 10.4 9.76548e-05 11.5 0.100098C12.5 0.100098 13.5001 0.500098 14.2001 1.1001C14.9001 1.7001 15.5001 2.5 15.7001 3.5C15.9001 4.3 16.0001 5.2 15.9001 6C15.9001 6.6 15.9001 7.3 15.9001 8C15.9001 8.7 15.9001 9.4 15.9001 10C15.9001 10.8 15.8001 11.7 15.7001 12.5C15.5001 13.4 15.0001 14.2999 14.2001 14.8999C13.4001 15.4999 12.5 15.8999 11.5 15.8999C10.5 15.9999 9.40006 16 8.20006 16ZM8.00004 14.8C9.20004 14.8 10.4 14.8 11.5 14.7C12.2 14.7 12.9 14.3999 13.5 13.8999C14 13.4999 14.4 12.9 14.5 12.2C14.7 11.5 14.7001 10.7 14.7001 10C14.7001 9.4 14.7001 8.7 14.7001 8C14.7001 7.3 14.7001 6.6 14.7001 6C14.7001 5.3 14.7 4.50005 14.5 3.80005C14.3 3.10005 14.0001 2.5001 13.4001 2.1001C12.8001 1.6001 12.1001 1.40005 11.4001 1.30005C10.3001 1.20005 9.20007 1.19995 7.90007 1.19995C6.70007 1.19995 5.50007 1.20005 4.40007 1.30005C3.70007 1.30005 3.00007 1.6001 2.40007 2.1001C1.90007 2.5001 1.50007 3.10005 1.40007 3.80005C1.20007 4.50005 1.20006 5.3 1.20006 6C1.20006 6.6 1.20006 7.3 1.20006 8C1.20006 8.7 1.20006 9.4 1.20006 10C1.20006 10.7 1.20007 11.5 1.40007 12.2C1.60007 12.9 1.90004 13.4999 2.50004 13.8999C3.10004 14.3999 3.80004 14.6 4.50004 14.7C5.60004 14.7 6.80004 14.8 8.00004 14.8ZM8.00004 11.8999C5.80004 11.8999 4.10002 10.2 4.10002 8C4.10002 5.8 5.80004 4.1001 8.00004 4.1001C10.2 4.1001 11.9001 5.8 11.9001 8C11.9001 10.2 10.1 11.8999 8.00004 11.8999ZM8.00004 5.30005C6.50004 5.30005 5.30003 6.5 5.30003 8C5.30003 9.5 6.50004 10.7 8.00004 10.7C9.50004 10.7 10.7001 9.5 10.7001 8C10.6001 6.5 9.40004 5.30005 8.00004 5.30005ZM12.3 2.80005C11.8 2.80005 11.4001 3.19995 11.4001 3.69995C11.4001 4.19995 11.8 4.6001 12.3 4.6001C12.8 4.6001 13.2001 4.19995 13.2001 3.69995C13.3001 3.29995 12.8 2.80005 12.3 2.80005Z"
+                      fill="#CEBD88"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    width="21"
+                    height="17"
+                    viewBox="0 0 21 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.70007 4.50005C8.40007 4.30005 8.00007 4.40005 7.80007 4.70005C7.70007 4.80005 7.70007 4.90005 7.70007 5.00005V11.1C7.70007 11.5 8.00007 11.8 8.40007 11.8C8.50007 11.8 8.60007 11.8 8.70007 11.7L13.8001 8.60005C14.1001 8.40005 14.2001 8.00005 14.0001 7.70005C13.9001 7.60005 13.9001 7.50005 13.8001 7.50005L8.70007 4.50005ZM9.00007 10V6.20005L12.2001 8.10005L9.00007 10Z"
+                      fill="#CEBD88"
+                    />
+                    <path
+                      d="M17.4 0.500049C12.8 -0.0999512 8.20002 -0.0999512 3.60002 0.500049C1.90002 0.700049 0.600024 2.00005 0.400024 3.60005C-0.0999756 6.60005 -0.0999756 9.60005 0.400024 12.5C0.700024 14.1 2.00002 15.4 3.60002 15.7C5.90002 16 8.20002 16.2001 10.5 16.2001C12.8 16.2001 15.1 16.1 17.4 15.7C19 15.4 20.3 14.2 20.6 12.5C21.1 9.50005 21.1 6.50005 20.6 3.60005C20.4 2.00005 19.1 0.700049 17.4 0.500049ZM19.3 12.3C19.1 13.4 18.3 14.2 17.2 14.4C12.7 15 8.20002 15 3.70002 14.4C2.60002 14.2 1.80002 13.4 1.60002 12.3C1.10002 9.50005 1.10002 6.60005 1.60002 3.80005C1.80002 2.70005 2.60002 1.90005 3.70002 1.70005C6.00002 1.50005 8.30002 1.30005 10.5 1.30005C12.8 1.30005 15 1.40005 17.2 1.70005C18.3 1.90005 19.1 2.70005 19.3 3.80005C19.8 6.70005 19.8 9.50005 19.3 12.3Z"
+                      fill="#CEBD88"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <img src="assets/img/logo.png" alt="Логотип" />
+            <ul class="header__lang">
+              <li>Az</li>
+              <li>Ru</li>
+              <li>En</li>
+            </ul>
+          </div>
+          <nav class="header__menu">
+            <a class="link_1" href="#">Ana səhifə</a>
+            <a class="link_2" href="about.html">Haqqımızda</a>
+            <a class="link_3" href="service.html">Xidmətlər &#10095;</a>
+            <a class="link_4" href="ship.html">Gəmilər</a>
+            <a class="link_5" href="career.html">Karyera</a>
+            <a class="link_6" href="gallery.html">Qalereya</a>
+            <a class="link_7" href="contacts.html">Əlaqə</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Slider -->
+    <div class="swiper swiper-over">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide main-slide">
+          <div class="slide-content">
+            <h1>The standard Lorem Ipsum passage1</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+            <a href="#">ƏTRAFLI</a>
+          </div>
+        </div>
+        <div class="swiper-slide main-slide">
+          <div class="slide-content">
+            <h1>The standard Lorem Ipsum passage2</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+            <a href="#">ƏTRAFLI</a>
+          </div>
+        </div>
+        <div class="swiper-slide main-slide">
+          <div class="slide-content">
+            <h1>The standard Lorem Ipsum passage3</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+            <a href="#">ƏTRAFLI</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="swiper-button-next next"></div>
+    <div class="swiper-button-prev prev"></div>
+    <main class="main">
+      <section class="service">
+        <div class="container">
+          <div class="about-us">
+            <div class="about-us__desc">
+              <small class="title-small">Niyə biz?</small>
+              <h2 class="title">Niyə biz?</h2>
+              <img class="title-img" src="/assets/img/wave.svg" alt="" />
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+            </div>
+            <div class="about-us-img">
+              <img src="/assets/img/about-img.jpg" alt="ship" />
+            </div>
+          </div>
+          <div class="services">
+            <small class="title-small">Xidmətlər</small>
+            <h2 class="title">Xidmətlər</h2>
+            <img class="title-img" src="/assets/img/wave.svg" alt="" />
+            <div class="swiper swiper-service">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide service-slide">
+                  <div class="slide-content">
+                    <article class="service-card">
+                      <img src="/assets/img/ship1.jpg" alt="ship" />
+                      <h3>LOREM İPSUM</h3>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s.
+                      </p>
+                      <a href="#">ətraflı</a>
+                    </article>
+                    <article class="service-card">
+                      <img src="/assets/img/ship2.jpg" alt="ship" />
+                      <h3>LOREM İPSUM</h3>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s.
+                      </p>
+                      <a href="#">ətraflı</a>
+                    </article>
+                    <article class="service-card">
+                      <img src="/assets/img/ship3.jpg" alt="ship" />
+                      <h3>LOREM İPSUM</h3>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s.
+                      </p>
+                      <a href="#">ətraflı</a>
+                    </article>
+                  </div>
+                </div>
+                <div class="swiper-slide service-slide">
+                  <div class="slide-content">
+                    <article class="service-card">
+                      <img src="/assets/img/ship1.jpg" alt="ship" />
+                      <h3>LOREM İPSUM</h3>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s.
+                      </p>
+                      <a href="#">ətraflı</a>
+                    </article>
+                    <article class="service-card">
+                      <img src="/assets/img/ship2.jpg" alt="ship" />
+                      <h3>LOREM İPSUM</h3>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s.
+                      </p>
+                      <a href="#">ətraflı</a>
+                    </article>
+                    <article class="service-card">
+                      <img src="/assets/img/ship3.jpg" alt="ship" />
+                      <h3>LOREM İPSUM</h3>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s.
+                      </p>
+                      <a href="#">ətraflı</a>
+                    </article>
+                  </div>
+                </div>
+                <div class="swiper-slide service-slide">
+                  <div class="slide-content">
+                    <article class="service-card">
+                      <img src="/assets/img/ship1.jpg" alt="ship" />
+                      <h3>LOREM İPSUM</h3>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s.
+                      </p>
+                      <a href="#">ətraflı</a>
+                    </article>
+                    <article class="service-card">
+                      <img src="/assets/img/ship2.jpg" alt="ship" />
+                      <h3>LOREM İPSUM</h3>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s.
+                      </p>
+                      <a href="#">ətraflı</a>
+                    </article>
+                    <article class="service-card">
+                      <img src="/assets/img/ship3.jpg" alt="ship" />
+                      <h3>LOREM İPSUM</h3>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s.
+                      </p>
+                      <a href="#">ətraflı</a>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="progress">
+        <div class="container">
+          <div class="progress__inner">
+            <div class="progress__item">
+              <h2>90</h2>
+              <h3>LOREM İPSUM</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text
+              </p>
+            </div>
+            <div class="progress__item">
+              <h2>142</h2>
+              <h3>LOREM İPSUM</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text
+              </p>
+            </div>
+            <div class="progress__item">
+              <h2>59</h2>
+              <h3>LOREM İPSUM</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="video-ship">
+        <div class="container">
+          <div class="video-ship__inner">
+            <div class="video-ship__desc">
+              <h2>Lorem Ipsum</h2>
+              <img src="assets/img/wave.svg" alt="" />
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <a href="#">ətraflı</a>
+            </div>
+            <div class="video-ship__video">
+              <img src="/assets/img/ship-section.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sponsors">
+        <div class="container">
+          <div class="sponsors__inner">
+            <img src="/assets/img/sponsor1.png" alt="спонсор" />
+            <img src="/assets/img/sponsor2.png" alt="спонсор" />
+            <img src="/assets/img/sponsor3.png" alt="спонсор" />
+            <img src="/assets/img/sponsor4.png" alt="спонсор" />
+            <img src="/assets/img/sponsor5.png" alt="спонсор" />
+          </div>
+        </div>
+      </section>
+      <section class="blogs">
+        <div class="container">
+          <div class="blogs__inner">
+            <small class="title-small small">Blog</small>
+            <h2 class="title">Bloglar</h2>
+            <img class="title-img img" src="/assets/img/wave.svg" alt="" />
+            <div class="swiper swiper-blog">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide blog-slide">
+                  <div class="slide-content">
+                    <article class="blog-card">
+                      <img src="/assets/img/blog1.jpg" alt="ship" />
+                      <div class="blog-date">
+                        <i class="fa-solid fa-calendar-days"></i
+                        ><span>26 December 2022</span>
+                      </div>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text.
+                      </p>
+                      <div class="blog-comments">
+                        <i class="fa-solid fa-eye"></i>
+                        <span class="wiew">12 view</span>
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <span class="comment">5 comments</span>
+                      </div>
+                    </article>
+                    <article class="blog-card">
+                      <img src="/assets/img/blog2.jpg" alt="ship" />
+                      <div class="blog-date">
+                        <i class="fa-solid fa-calendar-days"></i
+                        ><span>26 December 2022</span>
+                      </div>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </p>
+                      <div class="blog-comments">
+                        <i class="fa-solid fa-eye"></i>
+                        <span class="wiew">12 view</span>
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <span class="comment">5 comments</span>
+                      </div>
+                    </article>
+                    <article class="blog-card">
+                      <img src="/assets/img/blog3.jpg" alt="ship" />
+                      <div class="blog-date">
+                        <i class="fa-solid fa-calendar-days"></i
+                        ><span>26 December 2022</span>
+                      </div>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text.
+                      </p>
+                      <div class="blog-comments">
+                        <i class="fa-solid fa-eye"></i>
+                        <span class="wiew">12 view</span>
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <span class="comment">5 comments</span>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="swiper-slide blog-slide">
+                  <div class="slide-content">
+                    <article class="blog-card">
+                      <img src="/assets/img/blog1.jpg" alt="ship" />
+                      <div class="blog-date">
+                        <i class="fa-solid fa-calendar-days"></i
+                        ><span>26 December 2022</span>
+                      </div>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text.
+                      </p>
+                      <div class="blog-comments">
+                        <i class="fa-solid fa-eye"></i>
+                        <span class="wiew">12 view</span>
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <span class="comment">5 comments</span>
+                      </div>
+                    </article>
+                    <article class="blog-card">
+                      <img src="/assets/img/blog2.jpg" alt="ship" />
+                      <div class="blog-date">
+                        <i class="fa-solid fa-calendar-days"></i
+                        ><span>26 December 2022</span>
+                      </div>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </p>
+                      <div class="blog-comments">
+                        <i class="fa-solid fa-eye"></i>
+                        <span class="wiew">12 view</span>
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <span class="comment">5 comments</span>
+                      </div>
+                    </article>
+                    <article class="blog-card">
+                      <img src="/assets/img/blog3.jpg" alt="ship" />
+                      <div class="blog-date">
+                        <i class="fa-solid fa-calendar-days"></i
+                        ><span>26 December 2022</span>
+                      </div>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text.
+                      </p>
+                      <div class="blog-comments">
+                        <i class="fa-solid fa-eye"></i>
+                        <span class="wiew">12 view</span>
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <span class="comment">5 comments</span>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="swiper-slide blog-slide">
+                  <div class="slide-content">
+                    <article class="blog-card">
+                      <img src="/assets/img/blog1.jpg" alt="ship" />
+                      <div class="blog-date">
+                        <i class="fa-solid fa-calendar-days"></i
+                        ><span>26 December 2022</span>
+                      </div>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text.
+                      </p>
+                      <div class="blog-comments">
+                        <i class="fa-solid fa-eye"></i>
+                        <span class="wiew">12 view</span>
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <span class="comment">5 comments</span>
+                      </div>
+                    </article>
+                    <article class="blog-card">
+                      <img src="/assets/img/blog2.jpg" alt="ship" />
+                      <div class="blog-date">
+                        <i class="fa-solid fa-calendar-days"></i
+                        ><span>26 December 2022</span>
+                      </div>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </p>
+                      <div class="blog-comments">
+                        <i class="fa-solid fa-eye"></i>
+                        <span class="wiew">12 view</span>
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <span class="comment">5 comments</span>
+                      </div>
+                    </article>
+                    <article class="blog-card">
+                      <img src="/assets/img/blog3.jpg" alt="ship" />
+                      <div class="blog-date">
+                        <i class="fa-solid fa-calendar-days"></i
+                        ><span>26 December 2022</span>
+                      </div>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text.
+                      </p>
+                      <div class="blog-comments">
+                        <i class="fa-solid fa-eye"></i>
+                        <span class="wiew">12 view</span>
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <span class="comment">5 comments</span>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <img src="/assets/img/logo.png" alt="Логотип" />
+          <ul class="footer__menu">
+            <li><a href="#">Ana səhifə</a></li>
+            <li><a href="#">Haqqımızda</a></li>
+            <li><a href="#">Xidmətlər</a></li>
+            <li><a href="#">Gəmilər</a></li>
+          </ul>
+          <ul class="footer__menu">
+            <li><a href="#">Karyera</a></li>
+            <li><a href="#">Qalereya</a></li>
+            <li><a href="#">Əlaqə</a></li>
+          </ul>
+          <ul class="footer__contacts">
+            <li class="footer__contacts-title">
+              Bakı şəh., Üzeyir Hacibeyov, 5/34A
+            </li>
+            <li class="footer__contacts-number">
+              <span class="tel"> Tel: </span>
+              <div>
+                <a href="tel:994556666600">+994 55 6666600 </a>
+                <a href="tel:994554466606">+994 55 4466606 </a>
+              </div>
+            </li>
+            <li class="footer__contacts-mail">
+              <span> Mail: </span>
+              <a href="mailto:info@aurum.com">info@aurum.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
