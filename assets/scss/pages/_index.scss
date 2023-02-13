@@ -67,7 +67,7 @@
             }
           }
           .header__lang {
-            font-size: 20px;
+            font-size: 2rem;
             .header__lang-link {
               color: $primary1;
               &:hover {
@@ -205,8 +205,8 @@
       &__desc {
         p {
           max-width: 560px;
-          font-size: 14px;
-          line-height: 26px;
+          font-size: 1.4rem;
+          line-height: 2.6rem;
         }
       }
       &-img {
@@ -217,11 +217,11 @@
             height: 220px;
           }
           @media (max-width: $mobile_landscape) {
-            width: 380px;
-            height: 200px;
+            width: 250px;
+            height: 180px;
           }
           @media (max-width: $mobile_portrait) {
-            width: 240px;
+            width: 220px;
             height: 150px;
           }
         }
@@ -290,17 +290,17 @@
         }
         a {
           position: relative;
-          padding: 8px 52px;
+          padding: 12px 62px;
           background-color: $primary3;
-          font-size: 1.2rem;
+          font-size: 1.5rem;
           line-height: 2.2rem;
           color: $primary4;
           font-weight: 500;
           &:hover::after {
             content: "";
             position: absolute;
-            width: 139px;
-            height: 35px;
+            width: 166px;
+            height: 46px;
             top: -4px;
             left: -4px;
             border: 2px solid $primary3;
@@ -316,7 +316,7 @@
             height: 220px;
           }
           @media (max-width: $mobile_landscape) {
-            width: 420px;
+            width: 340px;
             height: 180px;
           }
           @media (max-width: $mobile_portrait) {
@@ -356,15 +356,15 @@
   .title-small {
     font-family: $dance_font;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 2rem;
+    line-height: 2.4rem;
     color: $primary3;
     padding: 20px;
   }
   .title {
     font-weight: 600;
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
     color: $primary4;
   }
   .title-img {
@@ -378,7 +378,7 @@
     display: flex;
     justify-content: space-between;
     padding: 70px 0 100px;
-    @media (max-width: $mobile_landscape) {
+    @media (max-width: 520px) {
       flex-direction: column;
     }
     img {

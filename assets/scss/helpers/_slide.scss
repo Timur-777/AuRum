@@ -27,10 +27,13 @@
     width: 700px;
     margin: 110px auto;
     @media (max-width: $laptop) {
+      width: 600px;
+    }
+    @media (max-width: $mobile_landscape) {
       width: 400px;
     }
     @media (max-width: $mobile_portrait) {
-      width: 250px;
+      width: 270px;
     }
     h1 {
       font-size: 3.2rem;
@@ -38,8 +41,12 @@
       font-weight: 600;
       margin-bottom: 40px;
       @media (max-width: $laptop) {
-        font-size: 2.2rem;
-        line-height: 2rem;
+        font-size: 2.7rem;
+        line-height: 2.2rem;
+      }
+      @media (max-width: $mobile_landscape) {
+        font-size: 2rem;
+        line-height: 2.2rem;
       }
     }
     p {
@@ -48,8 +55,12 @@
       font-weight: 500;
       margin-bottom: 70px;
       @media (max-width: $laptop) {
-        font-size: 1.4rem;
-        line-height: 1.8rem;
+        font-size: 1.8rem;
+        line-height: 2rem;
+      }
+      @media (max-width: $mobile_landscape) {
+        font-size: 1.6rem;
+        line-height: 2rem;
       }
     }
     a {
@@ -74,7 +85,6 @@
 }
 // Service Swiper
 .swiper-service {
-  padding-top: 30px;
   .slide-content {
     @include flex-between();
     @media (max-width: $laptop) {
@@ -85,14 +95,17 @@
       text-align: center;
       background-color: $primary1;
       padding: 20px 20px 30px;
-      margin: 0 10px 20px;
-      @media (max-width: $mobile_portrait) {
-        width: 220px;
+      @media (max-width: $mobile_landscape) {
+        width: 260px;
       }
       img {
-        width: 220px;
-        height: 150px;
+        width: 320px;
+        height: 180px;
         margin-bottom: 15px;
+        @media (max-width: $mobile_landscape) {
+          width: 260px;
+          height: 150px;
+        }
       }
       h3 {
         font-weight: 600;

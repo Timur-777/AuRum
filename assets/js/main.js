@@ -22,6 +22,21 @@ let swiper_service = new Swiper(".swiper-service", {
   },
   mousewheel: true,
   keyboard: true,
+  slidesPerView: 3,
+  breakpoints: {
+    280: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    991: {
+      slidesPerView: 3,
+      spaceBetween: 45,
+    },
+  },
 });
 
 let swiper_blog = new Swiper(".swiper-blog", {
@@ -30,6 +45,21 @@ let swiper_blog = new Swiper(".swiper-blog", {
   },
   mousewheel: true,
   keyboard: true,
+  slidesPerView: 3,
+  breakpoints: {
+    280: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 35,
+    },
+  },
 });
 function mobileMenu() {
   const burgerBtn = document.querySelector("#mobile-btn");
